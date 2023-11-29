@@ -6,3 +6,30 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = "__all__"
 
+
+class LoginSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('ism', 'phone')
+
+class AddProductSRL(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = "__all__"
+
+
+class AdminSRL(serializers.ModelSerializer):
+    class Meta:
+        model = Admin
+        fields = "__all__"
+
+
+
+
+
+
+
+
+
+
+

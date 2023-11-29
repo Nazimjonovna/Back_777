@@ -7,6 +7,7 @@ from rest_framework.response import Response
 class Admin(models.Model):
     username = models.CharField(max_length=20, unique=True)
     parol = models.CharField(max_length=9)
+    is_boss = models.BooleanField(default=False)
 
 
     def __str__(self):
